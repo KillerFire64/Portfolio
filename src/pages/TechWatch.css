@@ -1,0 +1,476 @@
+.tech-watch {
+  min-height: 100vh;
+  padding: 3rem 2rem;
+  background: var(--neutral-800);
+}
+
+.watch-intro {
+  background: linear-gradient(135deg, var(--red) 0%, var(--red) 100%);
+  color: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin-bottom: 3rem;
+  box-shadow: 0 4px 16px rgba(30, 64, 175, 0.3);
+}
+
+.watch-intro h2 {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.watch-intro p {
+  color: rgba(255, 255, 255, 0.95);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.watch-section {
+  background: var(--neutral-900);
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.watch-section h2 {
+  color: var(--red);
+  margin-bottom: 1.5rem;
+  font-size: 1.75rem;
+}
+
+.state-of-art {
+  background: var(--neutral-800);
+  padding: 2rem;
+  border-radius: 0.75rem;
+  border-left: 4px solid var(--red);
+}
+
+.state-of-art h3 {
+  color: var(--red);
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.5;
+}
+
+.state-of-art p {
+  color: var(--neutral-300);
+  line-height: 1.8;
+  margin-bottom: 1rem;
+}
+
+.state-of-art p:last-child {
+  margin-bottom: 0;
+}
+
+.watch-method {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.method-card {
+  background: var(--neutral-800);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border-top: 3px solid var(--red);
+}
+
+.method-card h3 {
+  color: var(--red);
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+.method-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.method-card li {
+  padding: 0.5rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--white);
+  line-height: 1.6;
+}
+
+.method-card li::before {
+  content: '▸';
+  position: absolute;
+  left: 0;
+  color: var(--red);
+  font-weight: bold;
+}
+
+.method-card strong {
+  color: var(--white);
+}
+
+.topics-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.topic-card {
+  background: var(--neutral-800);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  border-left: 4px solid var(--red-light);
+  transition: transform 0.3s, box-shadow 0.3s;
+  position: relative;
+}
+
+.topic-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.topic-card.featured {
+  border-left-color: var(--accent);
+  background: linear-gradient(135deg, rgba(234, 88, 12, 0.05) 0%, var(--black) 100%);
+}
+
+.topic-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: var(--accent);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.topic-card h3 {
+  color: var(--red);
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+  padding-right: 5rem;
+}
+
+.topic-card.featured h3 {
+  color: var(--accent);
+}
+
+.topic-card p {
+  color: var(--neutral-300);
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+.topic-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.topic-tags span {
+  background: var(--red-light);
+  color: white;
+  padding: 0.25rem 0.75rem;
+  border-radius: 0.5rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.benefit-card {
+  background: var(--neutral-800);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  transition: transform 0.3s;
+}
+
+.benefit-card:hover {
+  transform: scale(1.05);
+}
+
+.benefit-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.benefit-card h4 {
+  color: var(--red);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.benefit-card p {
+  color: var(--neutral-300);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.process-flow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.process-step {
+  flex: 1;
+  min-width: 150px;
+  background: var(--neutral-800);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  text-align: center;
+  position: relative;
+}
+
+.step-number {
+  width: 3rem;
+  height: 3rem;
+  background: var(--red);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0 auto 1rem;
+  box-shadow: 0 2px 8px rgba(30, 64, 175, 0.3);
+}
+
+.process-step h4 {
+  color: var(--red);
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+}
+
+.process-step p {
+  color: var(--neutral-300);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.process-arrow {
+  font-size: 2rem;
+  color: var(--red);
+  font-weight: bold;
+  padding: 0 0.5rem;
+}
+
+.monthly-watches {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.monthly-card {
+  background: var(--neutral-800);
+  border-radius: 1rem;
+  overflow: hidden;
+  border: 2px solid var(--red);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.monthly-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+}
+
+.monthly-header {
+  background: linear-gradient(135deg, var(--red) 0%, var(--red-light) 100%);
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.monthly-header h3 {
+  color: white;
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.monthly-date {
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.monthly-content {
+  padding: 2rem;
+}
+
+.monthly-section {
+  margin-bottom: 1.5rem;
+}
+
+.monthly-section:last-child {
+  margin-bottom: 0;
+}
+
+.monthly-section h4 {
+  color: var(--red);
+  margin-bottom: 0.75rem;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.monthly-section h4::before {
+  content: '▸';
+  color: var(--red);
+  font-weight: bold;
+}
+
+.monthly-section p {
+  color: var(--neutral-300);
+  line-height: 1.8;
+  margin-bottom: 0.75rem;
+}
+
+.monthly-section p:last-child {
+  margin-bottom: 0;
+}
+
+.monthly-section strong {
+  color: var(--white);
+  font-weight: 600;
+}
+
+.methods-intro {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+  color: var(--white);
+}
+
+.methods-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.methods-list li {
+  padding: 0.75rem 0;
+  padding-left: 1.5rem;
+  position: relative;
+  color: var(--neutral-300);
+  line-height: 1.7;
+  border-left: 3px solid var(--red-light);
+  margin-left: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.methods-list li::before {
+  content: '●';
+  position: absolute;
+  left: -0.75rem;
+  color: var(--red);
+  font-weight: bold;
+}
+
+.monthly-sources {
+  background: var(--neutral-900);
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.monthly-sources h4 {
+  color: var(--red);
+  margin-bottom: 1rem;
+  font-size: 1.1rem;
+}
+
+.source-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.source-link {
+  background: var(--red-light);
+  color: white;
+  padding: 0.5rem 1.25rem;
+  border-radius: 0.5rem;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.3s, transform 0.2s;
+  display: inline-block;
+}
+
+.source-link:hover {
+  background: var(--red);
+  transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+  .tech-watch {
+    padding: 2rem 1rem;
+  }
+
+  .watch-intro,
+  .watch-section {
+    padding: 1.5rem;
+  }
+
+  .watch-method,
+  .topics-grid,
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .process-flow {
+    flex-direction: column;
+  }
+
+  .process-arrow {
+    transform: rotate(90deg);
+    padding: 0.5rem 0;
+  }
+
+  .topic-card h3 {
+    padding-right: 0;
+    margin-bottom: 2rem;
+  }
+
+  .monthly-header {
+    padding: 1.25rem 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .monthly-header h3 {
+    font-size: 1.25rem;
+  }
+
+  .monthly-content {
+    padding: 1.5rem;
+  }
+
+  .source-links {
+    flex-direction: column;
+  }
+
+  .source-link {
+    text-align: center;
+  }
+}

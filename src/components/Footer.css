@@ -1,0 +1,55 @@
+.footer {
+  background: var(--neutral-900);
+  border-top: 2px solid var(--red);
+  padding: 2rem 1rem;
+  margin-top: auto;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.footer-text {
+  color: var(--neutral-300);
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.footer-github {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background: var(--red);
+  color: var(--white);
+  font-weight: 600;
+  text-decoration: none;
+  border-radius: 0.5rem;
+  transition: all 0.3s;
+  box-shadow: 0 4px 12px rgba(220, 38, 38, 0.3);
+}
+
+.footer-github:hover {
+  background: var(--red-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(220, 38, 38, 0.4);
+  text-decoration: none;
+}
+
+.footer-github svg {
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+}
