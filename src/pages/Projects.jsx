@@ -211,7 +211,7 @@ export default function Projects() {
         <div className="project-card featured">
           <div className="project-header">
             <h2>Projet 1 : Ferme de Serveurs Proxmox</h2>
-            <span className="project-period">Mars 2025 - Avril 2025</span>
+            <span className="project-period">Février 2025 - Mai 2025</span>
           </div>
 
           <div className="project-content">
