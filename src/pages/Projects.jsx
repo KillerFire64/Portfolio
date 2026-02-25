@@ -12,7 +12,7 @@ export default function Projects() {
         <div className="project-card">
           <div className="project-header">
             <h2>Site Web SolutionV - Initiation HTML/CSS</h2>
-            <span className="project-period">Septembre 2024 - Octobre 2024</span>
+            <span className="project-period">Octobre 2024 - Décembre 2024</span>
           </div>
 
           <div className="project-content">
@@ -292,7 +292,7 @@ export default function Projects() {
         <div className="project-card featured">
           <div className="project-header">
             <h2>Projet 2 : Infrastructure Réseau Complète</h2>
-            <span className="project-period">Septembre 2024 - Décembre 2024</span>
+            <span className="project-period">Septembre 2025 - Décembre 2025</span>
           </div>
 
           <div className="project-content">
